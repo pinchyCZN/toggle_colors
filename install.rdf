@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>toggleDocumentColors@darkoshi</em:id>
+		<em:name>toggleDocumentColors</em:name>
+		<em:version>1.4.20120122</em:version>
+		<em:type>2</em:type>
+		<em:creator>Peter Feigl</em:creator>
+		<em:developer>Darkoshi</em:developer>
+		<em:description>Adds a toolbar button and keyboard shortcut to switch between the default page colors and colors defined by the user. Firefox shortcut: Control-Shift-C; SeaMonkey shortcut: Control-K</em:description>
+		<em:iconURL>chrome://toggledocumentcolors/skin/toggledocumentcolors_icon32.png</em:iconURL>
+		<em:icon64URL>chrome://toggledocumentcolors/skin/toggledocumentcolors_icon64.png</em:icon64URL>
+		<em:targetApplication>
+			<!-- Firefox -->
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.0</em:minVersion>
+				<em:maxVersion>9.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+		<em:targetApplication>
+			<!-- SeaMonkey -->
+			<Description>
+				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+				<em:minVersion>2.0</em:minVersion>
+				<em:maxVersion>2.6.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+</RDF>

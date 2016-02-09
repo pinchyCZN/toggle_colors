@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://toggledocumentcolors/skin/overlay.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://toggledocumentcolors/locale/toggledocumentcolors.dtd">
+
+
+<overlay id="toggledocumentcolors-overlay"
+
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+	<script src="browser-overlay.js"/>
+
+
+	<commandset id="mainCommandSet">
+
+		<!-- command to execute for both menu item and keyboard shortcut -->
+
+		<command id="cmd_toggleDocumentColors" oncommand="toggledocumentcolors.onToolbarButtonCommand();"/>
+
+	</commandset>
+
+
+	<toolbarpalette id="BrowserToolbarPalette">
+
+		<toolbarbutton id="toggledocumentcolors-toolbar-button"
+
+			label="&toggledocumentcolorsToolbar.label;"
+
+			tooltiptext="&toggledocumentcolorsToolbar.tooltip;"
+
+			command="cmd_toggleDocumentColors"
+
+			class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+			type="checkbox"
+
+	</toolbarpalette>
+
+
+	<keyset id="mainKeyset">
+
+		<!-- Define keyboard shortcut. The key/modifiers attributes will be updated by the javascript. -->
+
+		<key id="key_toggledocumentcolors" key="placeholder" modifiers="placeholder" command="cmd_toggleDocumentColors"/>
+	</keyset>
+
+</overlay>
